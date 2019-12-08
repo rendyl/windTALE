@@ -1,0 +1,493 @@
+fileFormatVersion: 2
+guid: 222e7fc66855e7a4c9a1c2660154661d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3373587667042523430
+    second: KatonSprite_0
+  - first:
+      213: -218423547741910260
+    second: KatonSprite_1
+  - first:
+      213: 658736029949259069
+    second: KatonSprite_2
+  - first:
+      213: -7294461393725566155
+    second: KatonSprite_2
+  - first:
+      213: 2019470295638953460
+    second: KatonSprite_4
+  - first:
+      213: 1034697309731808857
+    second: KatonSprite_5
+  - first:
+      213: 4958223017183267072
+    second: KatonSprite_6
+  - first:
+      213: -1844159776962910430
+    second: KatonSprite_7
+  - first:
+      213: 1884396497786424116
+    second: KatonSprite_8
+  - first:
+      213: 9058967506802554651
+    second: KatonSprite_9
+  - first:
+      213: 9157518442356005111
+    second: KatonSprite_10
+  - first:
+      213: 6408151911413611637
+    second: KatonSprite_11
+  - first:
+      213: -9019406439018418805
+    second: KatonSprite_12
+  - first:
+      213: -7957497628452737627
+    second: KatonSprite_13
+  - first:
+      213: -8889789714091342574
+    second: KatonSprite_14
+  - first:
+      213: -8875324479724110575
+    second: KatonSprite_15
+  - first:
+      213: -7294461393725566155
+    second: KatonSprite_3
+  - first:
+      213: -6969840124793744484
+    second: KatonSprite_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KatonSprite_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 480
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b057b43eff8bea43a32d9923f80136d
+      internalID: -3373587667042523430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 477
+        width: 81
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca8250d8ec64be4a8c90fb3bbdd4a2f
+      internalID: -218423547741910260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 465
+        width: 128
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05980ee6f985eb428b706f4437ad5df
+      internalID: -7294461393725566155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 465
+        width: 179
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b185053e5f60ec2499d6461242f93d4f
+      internalID: 2019470295638953460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 302
+        width: 192
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bc89b7f7f1ff4d8b200f6d103fdb1
+      internalID: 1034697309731808857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 288
+        width: 205
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc4e21006c110f4b9dce8ff1892401c
+      internalID: 4958223017183267072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_7
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 288
+        width: 214
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16eb933ed10b3a42b5cfc5d9bbb4ae5
+      internalID: -1844159776962910430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_8
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 288
+        width: 199
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea12f38a447e5a348b873fcbdc53353d
+      internalID: 1884396497786424116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 126
+        width: 214
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c9e1faa59402a46864ff9b39a09fb0
+      internalID: 9058967506802554651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_10
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 118
+        width: 208
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eccb1755af3f6143ab5a64f25c8f072
+      internalID: 9157518442356005111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_11
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 193
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32477102a93d4744b17af91bed42511
+      internalID: 6408151911413611637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_12
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 148
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5465685d16b328d42864cd4fd16d6d4b
+      internalID: -9019406439018418805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_13
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 133
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d772352b9c0c1d4294d077f7f48c5d9
+      internalID: -7957497628452737627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a915cee548e13544abc527c761332b98
+      internalID: -8889789714091342574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_15
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 8
+        width: 66
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0d449785f21c74ea37b41d7f5f0cf3
+      internalID: -8875324479724110575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KatonSprite_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 463
+        width: 168
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7dfef27e1c34c7419f7854294883b0f
+      internalID: -7294461393725566155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
