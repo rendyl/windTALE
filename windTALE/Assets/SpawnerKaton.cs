@@ -22,7 +22,7 @@ public class SpawnerKaton : MonoBehaviour
         {
             GameObject go = Instantiate(katonPrefab, transform.position, Quaternion.identity);
             go.transform.parent = gameObject.transform;
-            timeBeforeSpawn = 1f;
+            timeBeforeSpawn = 0.5f + Random.Range(0, 1f);
         }
     }
 }
