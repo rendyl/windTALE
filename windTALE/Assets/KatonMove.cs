@@ -16,7 +16,7 @@ public class KatonMove : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(-1,0,0) * speed * Time.deltaTime;
-        if (transform.position.x < -10) Destroy(gameObject);
+        if (transform.position.x < -8) Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,10 +26,11 @@ public class KatonMove : MonoBehaviour
             Debug.Log("hello");
             GetComponent<SpriteRenderer>().sortingOrder = 0;
             GetComponent<Animator>().SetTrigger("burnout");
+            other.gameObject.GetComponent<ScoreManager>().upScore();
         }
         else
         {
-            Debug.Log("hella");
+            other.gameObject.GetComponent<ScoreManager>().gameOver();
         }
     }
 }

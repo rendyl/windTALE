@@ -25,7 +25,7 @@ public class Attack : MonoBehaviour
             }
         }
 
-        if(Input.GetMouseButtonDown(0) && !isAttacking)
+        if(Input.GetMouseButtonDown(0) && !isAttacking && Time.timeScale != 0)
         {
             isAttacking = true;
             timeAttack = 0.3f;
