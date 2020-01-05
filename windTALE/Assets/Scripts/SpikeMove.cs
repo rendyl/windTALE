@@ -27,10 +27,11 @@ public class SpikeMove : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Attack>().isDodging)
         {
-            other.gameObject.GetComponent<ScoreManager>().upScore();
+            //other.gameObject.GetComponent<ScoreManager>().upScore();
         }
         else
         {
+            other.gameObject.GetComponent<Attack>().alive = false;
             other.gameObject.GetComponent<ScoreManager>().gameOver(0.05f);
         }
     }

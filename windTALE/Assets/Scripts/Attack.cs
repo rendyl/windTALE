@@ -7,6 +7,11 @@ public class Attack : MonoBehaviour
 {
     public bool isAttacking = false;
     public bool isDodging = false;
+    public bool alive = true;
+    public float score = 0;
+
+    public float[] distances = new float[4];
+    public NeuralNetwork network;
 
     float timeAttack = 0f;
     float timeDodge = 0f;
@@ -17,46 +22,129 @@ public class Attack : MonoBehaviour
 
     }
 
+    void Attackz()
+    {
+        isAttacking = true;
+        timeAttack = 0.4f;
+        gameObject.GetComponent<Animator>().SetTrigger("Attack");
+        //gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
+    }
+
+    void Dodge()
+    {
+        isDodging = true;
+        timeDodge = 0.4f;
+        gameObject.GetComponent<Animator>().SetTrigger("Dodge");
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r, gameObject.GetComponent<SpriteRenderer>().color.g, gameObject.GetComponent<SpriteRenderer>().color.b, 0.3f);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (timeAttack > 0)
+        if(alive)
         {
-            timeAttack -= Time.deltaTime;
-            if (timeAttack <= 0.2f)
+            score += Time.deltaTime;
+
+            if (timeAttack > 0)
             {
-                isAttacking = false;
-                //gameObject.GetComponent<SpriteRenderer>().color = Color.white;     
+                timeAttack -= Time.deltaTime;
+                if (timeAttack <= 0.2f)
+                {
+                    isAttacking = false;
+                    //gameObject.GetComponent<SpriteRenderer>().color = Color.white;     
+                }
+            }
+
+            if (timeDodge > 0)
+            {
+                timeDodge -= Time.deltaTime;
+                if (timeDodge <= 0.2f)
+                {
+                    isDodging = false;
+                    gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r, gameObject.GetComponent<SpriteRenderer>().color.g, gameObject.GetComponent<SpriteRenderer>().color.b, 1f);
+                }
             }
         }
 
-        if (timeDodge > 0)
+        /*
+        if (Input.GetMouseButtonDown(0) && timeAttack <= 0 && timeDodge <= 0 && alive)
         {
-            timeDodge -= Time.deltaTime;
-            if (timeDodge <= 0.2f)
-            {
-                isDodging = false;
-                gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            }
+            Attackz();
         }
 
-        if (Input.GetMouseButtonDown(0) && timeAttack <= 0 && timeDodge <= 0 && Time.timeScale != 0)
+        if (Input.GetMouseButtonDown(1) && timeAttack <= 0 && timeDodge <= 0 && alive)
         {
-            isAttacking = true;
-            timeAttack = 0.4f;
-            gameObject.GetComponent<Animator>().SetTrigger("Attack");
-            //gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
-        }
-
-        if (Input.GetMouseButtonDown(1) && timeAttack <= 0 && timeDodge <= 0 && Time.timeScale != 0)
-        {
-            isDodging = true;
-            timeDodge = 0.4f;
-            gameObject.GetComponent<Animator>().SetTrigger("Dodge");
-            gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .3f);
+            Dodge();
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         if (Input.GetKeyDown(KeyCode.Return)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        */
+    }
+
+    public IEnumerator GameLoop()
+    {
+        while (alive)
+        {
+            UpdateDistances();
+            Decision();
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+    void UpdateDistances()
+    {
+        if (FindObjectOfType<SpawnerEnemy>().listEnemy[0] != null)
+        {
+            distances[0] = (FindObjectOfType<SpawnerEnemy>().listEnemy[0].transform.position - transform.position).magnitude;
+        }
+        else
+        {
+            distances[0] = -1f;
+        }
+
+        if (FindObjectOfType<SpawnerEnemy>().listEnemy[1] != null)
+        {
+            distances[1] = (FindObjectOfType<SpawnerEnemy>().listEnemy[1].transform.position - transform.position).magnitude;
+        }
+        else
+        {
+            distances[1] = -1f;
+        }
+
+        if (FindObjectOfType<SpawnerEnemy>().listSpike[0] != null)
+        {
+            distances[2] = (FindObjectOfType<SpawnerEnemy>().listSpike[0].transform.position - transform.position).magnitude;
+        }
+        else
+        {
+            distances[2] = -1f;
+        }
+
+        if (FindObjectOfType<SpawnerEnemy>().listSpike[1] != null)
+        {
+            distances[3] = (FindObjectOfType<SpawnerEnemy>().listSpike[1].transform.position - transform.position).magnitude;
+        }
+        else
+        {
+            distances[3] = -1f;
+        }
+    }
+
+    void Decision()
+    {
+        if (alive)
+        {   
+            float[] decision = network.Compute(distances);
+
+            if (decision[0] < 0.333f && timeAttack <= 0 && timeDodge <= 0 && alive)
+            {
+                Attackz();
+            }
+            else if (decision[0] > 0.666f && timeAttack <= 0 && timeDodge <= 0 && alive)
+            {
+                Dodge();
+            }
+        }
     }
 }

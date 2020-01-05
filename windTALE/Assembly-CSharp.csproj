@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Attack.cs" />
      <Compile Include="Assets\Scripts\DayNightCycle.cs" />
      <Compile Include="Assets\Scripts\GhostMove.cs" />
+     <Compile Include="Assets\Scripts\NeuralNetwork.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\SideScroller.cs" />
      <Compile Include="Assets\Scripts\SpawnerEnemy.cs" />

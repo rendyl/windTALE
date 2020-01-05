@@ -46,10 +46,11 @@ public class GhostMove : MonoBehaviour
                 GetComponent<SpriteRenderer>().sortingOrder = 8;
                 fadeOut = true;
             }
-            other.gameObject.GetComponent<ScoreManager>().upScore();
+            //other.gameObject.GetComponent<ScoreManager>().upScore();
         }
         else
         {
+            other.gameObject.GetComponent<Attack>().alive = false;
             other.gameObject.GetComponent<ScoreManager>().gameOver(0.1f);
         }
     }
