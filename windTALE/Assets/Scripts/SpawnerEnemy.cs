@@ -16,6 +16,24 @@ public class SpawnerEnemy : MonoBehaviour
         
     }
 
+    public void clearMap()
+    {
+        foreach(GameObject go in listEnemy)
+        {
+            Destroy(go);
+        }
+
+        foreach (GameObject go in listSpike)
+        {
+            Destroy(go);
+        }
+
+        listEnemy.Clear();
+        listSpike.Clear();
+
+        timeBeforeSpawn = 1f;
+    }
+
     // Update is called once per frame
     void Update()
     {

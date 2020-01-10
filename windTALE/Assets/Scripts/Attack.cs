@@ -63,9 +63,12 @@ public class Attack : MonoBehaviour
                     isDodging = false;
                     gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r, gameObject.GetComponent<SpriteRenderer>().color.g, gameObject.GetComponent<SpriteRenderer>().color.b, 1f);
                 }
-            }
+            }       
         }
-
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.GetComponent<SpriteRenderer>().color.r, gameObject.GetComponent<SpriteRenderer>().color.g, gameObject.GetComponent<SpriteRenderer>().color.b, 0f);
+        }
         /*
         if (Input.GetMouseButtonDown(0) && timeAttack <= 0 && timeDodge <= 0 && alive)
         {
@@ -94,7 +97,7 @@ public class Attack : MonoBehaviour
 
     void UpdateDistances()
     {
-        if (FindObjectOfType<SpawnerEnemy>().listEnemy[0] != null)
+        if (FindObjectOfType<SpawnerEnemy>().listEnemy.Count > 0)
         {
             distances[0] = (FindObjectOfType<SpawnerEnemy>().listEnemy[0].transform.position - transform.position).magnitude;
         }
@@ -103,7 +106,7 @@ public class Attack : MonoBehaviour
             distances[0] = -1f;
         }
 
-        if (FindObjectOfType<SpawnerEnemy>().listEnemy[1] != null)
+        if (FindObjectOfType<SpawnerEnemy>().listEnemy.Count > 1)
         {
             distances[1] = (FindObjectOfType<SpawnerEnemy>().listEnemy[1].transform.position - transform.position).magnitude;
         }
@@ -112,7 +115,7 @@ public class Attack : MonoBehaviour
             distances[1] = -1f;
         }
 
-        if (FindObjectOfType<SpawnerEnemy>().listSpike[0] != null)
+        if (FindObjectOfType<SpawnerEnemy>().listSpike.Count > 0)
         {
             distances[2] = (FindObjectOfType<SpawnerEnemy>().listSpike[0].transform.position - transform.position).magnitude;
         }
@@ -121,7 +124,7 @@ public class Attack : MonoBehaviour
             distances[2] = -1f;
         }
 
-        if (FindObjectOfType<SpawnerEnemy>().listSpike[1] != null)
+        if (FindObjectOfType<SpawnerEnemy>().listSpike.Count > 1)
         {
             distances[3] = (FindObjectOfType<SpawnerEnemy>().listSpike[1].transform.position - transform.position).magnitude;
         }
