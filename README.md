@@ -3,13 +3,14 @@
 ## Histoire
 
 ***Wind Tale...***
+
 *Le jeu met en scène un Samouraï de renom retiré ayant survécu à de nombreuses batailles. 
 Déchiré par son passé, et ne trouvant plus de sens à ce cycle de violence sans fin... il décide de vagabonder... 
 Devenu Rōnin, ses souvenirs le hantent et il doit y faire face...*
 
 ## Illustration
 
-![Wind Tale](Wind.PNG)
+![Wind Tale](Wind.png)
 
 ## Fiche technique du jeu
 
