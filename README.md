@@ -7,7 +7,11 @@
 Déchiré par son passé, et ne trouvant plus de sens à ce cycle de violence sans fin... il décide de vagabonder... 
 Devenu Rōnin, ses souvenirs le hantent et il doit y faire face...*
 
-## Fiche technique du jeu :
+## Illustration
+
+![Wind Tale](Wind.PNG)
+
+## Fiche technique du jeu
 
 Le jeu est simple (il est voulu qu'il le soit pour améliorer l'apprentissage), le joueur a deux possibilités :
 - **ATTAQUER** avec le Clic Gauche (animation d'attaque)
