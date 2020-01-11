@@ -1,4 +1,5 @@
 # windTALE
+Gamagora 2019 - AI - Neural Network & Genetic Algorithm 
 
 ## Histoire
 
