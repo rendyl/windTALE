@@ -33,7 +33,7 @@ public class GeneticManager : MonoBehaviour
                 atk.GetComponent<SpriteRenderer>().material.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 
                 //create the network
-                atk.network = new NeuralNetwork(4, 10, 1);
+                atk.network = new NeuralNetwork(2, 10, 1);
                 atk.network.InitializeRandomWeight();
                 attackerList.Add(atk);
             }
@@ -100,7 +100,7 @@ public class GeneticManager : MonoBehaviour
     public void StartGameLoop()
     {
         txtGen.SetText("GENERATION : " + gen);
-        txtScore.SetText("BEST SCORE : " + bestScore);
+        txtScore.SetText("MEILLEUR SCORE : " + bestScore);
         score = 0;
 
         foreach (Attack atk in attackerList)
@@ -112,7 +112,7 @@ public class GeneticManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        txtScore.SetText("BEST SCORE : 0");
+        txtScore.SetText("MEILLEUR SCORE : 0");
         nextGen();
         StartGameLoop();
     }

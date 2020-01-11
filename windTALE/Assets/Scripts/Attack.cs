@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     public bool alive = true;
     public float score = 0;
 
-    public float[] distances = new float[4];
+    public float[] distances = new float[2];
     public NeuralNetwork network;
 
     float timeAttack = 0f;
@@ -99,38 +99,35 @@ public class Attack : MonoBehaviour
     {
         if (FindObjectOfType<SpawnerEnemy>().listEnemy.Count > 0)
         {
-            distances[0] = (FindObjectOfType<SpawnerEnemy>().listEnemy[0].transform.position - transform.position).magnitude;
+            if(FindObjectOfType<SpawnerEnemy>().listEnemy[0].transform.position.x <= transform.position.x)
+            {
+                distances[0] = -1f;
+            }
+            else
+            {
+                distances[0] = (FindObjectOfType<SpawnerEnemy>().listEnemy[0].transform.position - transform.position).magnitude;
+            }
+            
         }
         else
         {
             distances[0] = -1f;
         }
 
-        if (FindObjectOfType<SpawnerEnemy>().listEnemy.Count > 1)
+        if (FindObjectOfType<SpawnerEnemy>().listSpike.Count > 0)
         {
-            distances[1] = (FindObjectOfType<SpawnerEnemy>().listEnemy[1].transform.position - transform.position).magnitude;
+            if (FindObjectOfType<SpawnerEnemy>().listSpike[0].transform.position.x <= transform.position.x)
+            {
+                distances[1] = -1f;
+            }
+            else
+            {
+                distances[1] = (FindObjectOfType<SpawnerEnemy>().listSpike[0].transform.position - transform.position).magnitude;
+            }
         }
         else
         {
             distances[1] = -1f;
-        }
-
-        if (FindObjectOfType<SpawnerEnemy>().listSpike.Count > 0)
-        {
-            distances[2] = (FindObjectOfType<SpawnerEnemy>().listSpike[0].transform.position - transform.position).magnitude;
-        }
-        else
-        {
-            distances[2] = -1f;
-        }
-
-        if (FindObjectOfType<SpawnerEnemy>().listSpike.Count > 1)
-        {
-            distances[3] = (FindObjectOfType<SpawnerEnemy>().listSpike[1].transform.position - transform.position).magnitude;
-        }
-        else
-        {
-            distances[3] = -1f;
         }
     }
 

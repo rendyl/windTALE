@@ -123,8 +123,6 @@ MonoBehaviour:
   distances:
   - 0
   - 0
-  - 0
-  - 0
 --- !u!61 &5455525847978882164
 BoxCollider2D:
   m_ObjectHideFlags: 0
