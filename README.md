@@ -22,6 +22,7 @@ L'IA a donc trois choix : **ATTAQUER** , **ESQUIVER**, ou **NE RIEN FAIRE**.
 
 Voici une vidéo du fonctionnement du jeu et de l'algo : 
 https://www.youtube.com/watch?v=d3NDZ_SRkps
+
 Elle est divisée en deux parties : 
 - Démo du jeu pendant les 40 premières secondes
 - Démo de l'algo génétique qui joue au jeu après, si vous voulez voir la meilleure génération, allez directement à la fin de la vidéo !
