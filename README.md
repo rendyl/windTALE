@@ -2,17 +2,16 @@
 
 ## Histoire
 
-Wind Tale...
-
-Le jeu met en scène un Samouraï de renom retiré ayant survécu à de nombreuses batailles. 
+***Wind Tale...***
+*Le jeu met en scène un Samouraï de renom retiré ayant survécu à de nombreuses batailles. 
 Déchiré par son passé, et ne trouvant plus de sens à ce cycle de violence sans fin... il décide de vagabonder... 
-Devenu Rōnin, ses souvenirs le hantent et il doit y faire face...
+Devenu Rōnin, ses souvenirs le hantent et il doit y faire face...*
 
 ## Fiche technique du jeu :
 
 Le jeu est simple (il est voulu qu'il le soit pour améliorer l'apprentissage), le joueur a deux possibilités :
-> ATTAQUER avec le Clic Gauche (animation d'attaque)
-> ESQUIVER avec le Clic Droit (le personnage devient semi transparent)
+- ATTAQUER avec le Clic Gauche (animation d'attaque)
+- ESQUIVER avec le Clic Droit (le personnage devient semi transparent)
 Il y a un délai on ne peut pas attaquer et esquiver en même temps et il y a un délai entre deux actions pour éviter le spamming.
 Le timing pour attaquer un ennemi ou esquiver un pic est très serré mais c'est voulu pour que l'IA ait de la difficulté à jouer au jeu.
 
