@@ -33,3 +33,7 @@ Elle est divisée en deux parties :
 - Démo du jeu pendant les 40 premières secondes
 - Démo de l'algo génétique qui joue au jeu après, si vous voulez voir la meilleure génération, allez directement à la fin de la vidéo !
 *Paramètres : % de mutation : 5% / 100 IA générées à chaque fois / On prend les 2 meilleures pour la reproduction*
+
+## Lien pour télécharger le jeu :
+
+https://drive.google.com/open?id=18TJ8tqEcYvbCaBj8FRlvCEbtNpDEPp-U
